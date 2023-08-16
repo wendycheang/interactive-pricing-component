@@ -1,0 +1,22 @@
+
+
+
+
+/** layout **/
+.feature-line {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+}
+
+.feature-line img{
+    height: 5%;
+}
+
+@media (min-width: 375px) {
+    .feature-line {
+        justify-content: left;
+    }
+    
+}

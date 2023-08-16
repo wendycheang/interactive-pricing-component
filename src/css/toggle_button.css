@@ -1,0 +1,55 @@
+
+
+
+.toggle_switch {
+    position: relative;
+    display: inline-block;
+    padding: 0 1rem;
+  }
+  
+  /* Hide default HTML checkbox */
+  .toggle_switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle_button {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--light-grayish-blue);
+    border: 2px solid var(--light-grayish-blue);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 15px;
+
+  }
+  
+  .toggle_switch input:checked + .toggle_button {
+    background-color: var(--strong-cyan);
+    border: 2px solid var(--strong-cyan);
+  }
+
+  .toggle_button:before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 40%;
+    left: 0px;
+    bottom: 0px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  .toggle_switch input:checked + .toggle_button:before {
+    -webkit-transform: translateX(calc(2rem - 13px));
+    -ms-transform: translateX(calc(2rem - 10px));
+    transform: translateX(calc(2rem - 11px));
+  }

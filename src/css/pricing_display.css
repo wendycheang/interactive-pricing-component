@@ -1,0 +1,63 @@
+/** formatting **/
+
+.purchase-section {
+    background-color: var(--white);
+    border: none;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0px 9px 10px -5px var(--pale-blue);
+    -moz-box-shadow: 0px 9px 10px -5px var(--pale-blue);
+    box-shadow: 0px 9px 10px -5px var(--pale-blue);
+}
+
+.signup-button {
+    background-color: var(--dark-desaturated-blue);
+    border: none;
+    color: var(--grayish-blue);
+    border-radius: 25px;
+    max-width: 200px;
+    font-weight: 800;
+}
+
+
+/** layout **/
+
+.second-section {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.second-section button {
+    width: 45%;
+    padding: 1em 2em;
+}
+
+@media (min-width: 375px) {
+
+    .second-section {
+       width: 90%;
+       margin: 0 auto;
+
+       flex-direction: row;
+       justify-content: space-between;
+       text-align: left;
+    }
+
+    .features-list{
+        flex-grow: 2;
+    }
+
+    .signup-button {
+        flex-shrink: 0;
+        
+    }
+}

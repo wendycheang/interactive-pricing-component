@@ -1,0 +1,66 @@
+/** formatting **/
+
+.App {
+  background-image: url('../images/bg-pattern.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size : 100vw 50vh;
+
+  background-color: var(--very-pale-blue);
+  color: var(--grayish-blue);
+}
+
+
+.intro-header {
+    background-image: url('../images/pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+
+.intro-header h2 {
+    font-weight: 800;
+    color: var(--dark-desaturated-blue);
+}
+
+
+/** layout **/
+
+.App {
+    padding: 4rem 0 6rem 0;
+}
+  
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    width: 90%;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.intro-header {
+    padding: 2rem 0;
+}
+
+.intro-header h2 {
+    margin-bottom: 1rem;
+}
+
+.intro-header p {
+    margin-bottom: .75rem;
+}
+
+
+@media (min-width: 375px) {
+
+    .description {
+        width: 62%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+  
+}
