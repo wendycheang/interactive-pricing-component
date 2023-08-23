@@ -16,6 +16,7 @@ input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
     background: linear-gradient(var(--dark-cyan), var(--dark-cyan)) 0/var(--slider-ratio) 100% no-repeat, var(--light-grayish-blue);
   }
   
+  /** Chrome and Edge **/
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
